@@ -6,7 +6,7 @@ from costadeldata.CostaDelData import CostaDelData
 
 model = pickle.load(open('model/xgb_classifier.pkl', 'rb'))
 
-app = Flask[__name__]
+app = Flask(__name__)
 
 @app.route('/costadeldata/predict', methods=['POST'])
 def costadeldata_predict():
