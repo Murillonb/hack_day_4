@@ -23,7 +23,7 @@ def costadeldata_predict():
         pipeline = CostaDelData()
         
         # limpeza dos dados
-        df1 = pipeline.data_cleaning(test_raw)
+        df1 = pipeline.data_cleaning(test_raw.copy())
         
         # preparação dos dados
         df2 = pipeline.data_preparation(df1)
